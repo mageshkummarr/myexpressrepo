@@ -13,6 +13,10 @@ echo "Files in directory: $(ls -la)"
 echo "Installing npm dependencies..."
 npm install --production || { echo "npm install failed"; exit 1; }
 
+# Run database seeding
+echo "Running database seeding..."
+npm run seed || { echo "npm run seed failed"; exit 1; }
+
 # Stop any existing PM2 processes
 echo "Stopping existing PM2 processes..."
 pm2 stop server 2>/dev/null || echo "No existing server process"
