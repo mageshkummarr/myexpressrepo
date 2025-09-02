@@ -10,7 +10,7 @@ export const addFlight = async (flightData) => {
   //   arrivalCity: flightData.to.trim(),
   //   departureTime: flightData.departureTime,
   //   arrivalTime: flightData.arrivalTime,
-  //   price: parseFloat(flightData.price),
+  //   prrice: parseFloat(flightData.price),
   //   duration: "7h 30m",
   //   // seats: parseInt(flightData.seats, 10)
   // };
