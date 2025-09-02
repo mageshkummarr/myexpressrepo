@@ -20,7 +20,7 @@ export const createBooking = async (values, flightDetails, searchParams) => {
 };
 
 const API = axios.create({
-  baseURL: 'http://13.201.87.21:5000/bookings',
+  baseURL: 'http://13.235.104.72:5000/bookings',
   headers: {
     Authorization: `Bearer ${localStorage.getItem('token')}`,
   },
